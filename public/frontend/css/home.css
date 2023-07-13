@@ -1,0 +1,1259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap");
+html * {
+    scroll-behavior: smooth !important;
+    font-family: "popins", sans-serif !important;
+}
+
+.text-judul {
+    margin-top: 100px !important;
+    margin-bottom: 40px !important;
+    font-size: 36px;
+    font-weight: 700;
+}
+:root {
+    --blue: #185adb;
+    --white: #ffff;
+    --yellow: #FFEF01;
+}
+.alert-feedback{
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+}
+.active {
+    color: var(--blue) !important;
+}
+.text-header {
+    color: var(--blue);
+}
+.button-yellow{
+    background-color: var(--yellow) !important;
+}
+.button-color {
+    background-color: var(--blue) !important;
+}
+.background-color {
+    background-color: var(--blue) !important;
+}
+/* Start About Divisi */
+.img-divisi {
+    /* height: 600px !important; */
+    object-fit: cover !important;
+    object-position: center !important;
+
+}
+/* End About Divisi */
+/* START SCROLL BAR  */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.44, rgb(122, 153, 217)),
+        color-stop(0.72, rgb(73, 125, 189)),
+        color-stop(0.86, rgb(28, 58, 148))
+    );
+}
+/* END SCROLL BAR */
+
+/* Start auto top button */
+#up-to-top {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--blue);
+    border-radius: 100%;
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+}
+#up-to-top span {
+    max-width: 35px;
+    transition: 0.3s ease-in-out;
+}
+#up-to-top span img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+#up-to-top:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: var(--blue);
+}
+#up-to-top span {
+    transform: rotate(-360deg);
+}
+
+.active {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+/* End auto top button */
+
+/* START NAVBAR */
+.navbar-logo {
+    width: 56px !important;
+    height: 56px !important;
+}
+.navbar-font {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+/* END NAVBAR */
+
+/* START HERO */
+.hero {
+    background: linear-gradient(0deg, #0a1931 0%, rgba(10, 25, 49, 0) 100%),
+        url(/frontend/img/web-bg.png);
+        background-size:cover;
+        height: 621px;
+        left: 150px;
+        top: 100px;
+        border-radius: 10px;
+}
+.hero-logo {
+    width: 114px;
+    height: 114px;
+}
+.hero-font {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+/* END HERO */
+
+/* START BUTTON BERANDA */
+a.finbyz-button {
+    color: #1aa8e2;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: #fff;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s ease all;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 220px;
+    font-weight: bold;
+    padding: 14px 0;
+    border: 3px solid #ffff;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+a.finbyz-button:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #ffff;
+
+    z-index: -1;
+    border-radius: 40px;
+}
+a.finbyz-button:hover,
+a.finbyz-button:focus {
+    transform: scale(0.95);
+    transition: 0.9s;
+    color: var(--blue);
+    border: 3px solid var(--blue);
+    font-size: 13px;
+    font-weight: bold !important;
+}
+a.finbyz-button:hover:before,
+a.finbyz-button:focus:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+/* END BUTTON BERANDA */
+/* Start Stick */
+.stick {
+    margin-top: -60px;
+}
+.card-stick {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+.card-stick-info img {
+    width: 50px !important;
+    height: 50px !important;
+}
+.card-stick-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 80px;
+}
+.card-stick-text-repo {
+    font-size: 18px;
+    margin-left: 50px;
+}
+/* End Stick */
+
+/* START KEGIATAN BERANDA */
+
+.card-activity {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.card-activitys {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.card-img-overlay {
+    background: linear-gradient(
+        0deg,
+        #0a1931 0%,
+        rgba(10, 25, 49, 0) 100%
+    ) !important;
+}
+.activity {
+    margin-top: 150px;
+}
+.card-beranda-big .card-img {
+    object-fit: cover;
+    object-position: center;
+    height: 410px;
+}
+.card-beranda-big h5 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.card-beranda-big p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: -3px;
+}
+.calendar {
+    height: 15px;
+    margin-top: -3px;
+}
+.card-beranda-big small {
+    font-size: 11px;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+
+.card-beranda .card-img {
+    object-fit: cover;
+    object-position: center;
+    height: 197px;
+}
+.card-beranda h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.card-beranda p {
+    font-size: 10px;
+    font-weight: 600;
+}
+.card-beranda:hover {
+    transform: scale(1.03);
+    transition: 0.4s;
+}
+.card-beranda-big:hover {
+    transform: scale(1.03);
+    transition: 0.4s;
+}
+.activity img {
+    background: linear-gradient(
+        0deg,
+        #0a1931 0%,
+        rgba(10, 25, 49, 0) 100%
+    ) !important;
+    max-width: 800px;
+}
+/* End KEGIATAN BERANDA */
+
+/* START KEGIATAN */
+
+.card-kegiatan .card-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-kegiatan .time {
+    font-size: 12px;
+}
+.time i {
+    color: var(--blue) !important;
+}
+.card-image-kegiatan {
+    position: relative;
+}
+.card-image-kegiatan img {
+    object-fit: cover;
+    object-position: center;
+    height: 230px;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.card-footer-info {
+    position: relative;
+}
+.card-footer-info span {
+    font-size: 12px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.read-more {
+    position: absolute;
+    right: 0;
+    top: 0 !important;
+}
+
+.read-more-1 {
+    text-decoration: none;
+    position: relative;
+    color: var(--white);
+}
+
+.read-more-1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--white);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+}
+
+.read-more-1:hover {
+    color: var(--white);
+}
+
+.read-more-1:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+    color: var(--white);
+}
+
+/* End KEGIATAN TERBARU */
+/* Start Visimisi */
+.misi {
+    margin-top: 50px !important;
+}
+/* End VisiMisi */
+/* START DEVISI */
+.wrapper {
+    margin-left: -20px;
+    display: flex;
+}
+.card-divisi-body {
+    background-color: #fff !important;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    height: 400px;
+    position: relative;
+}
+.card-divisi-body:hover {
+    transform: scale(1.03);
+    transition: 0.4s;
+}
+.card-divisi-body p {
+    font-size: 14px;
+}
+.image-divisi:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.card-icon {
+    display: flex;
+    justify-content: center;
+}
+.card-link {
+    position: absolute;
+    bottom: 40px;
+
+    color: var(--blue) !important;
+}
+
+/* END DEVISI */
+
+/* START STRUKTUR  */
+
+.card-struktur {
+    position: relative;
+}
+.body-struktur {
+    background-color: #fff !important;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.body-struktur:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.person-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 8px;
+}
+.person-info h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.person-info p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.person-img{
+    object-fit: cover;
+    object-position: center;
+}
+/* END STRUKTUR */
+
+/* START ABOUT */
+.about-divisi {
+    margin-bottom: -20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.about-divisi h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.divisi-content {
+    font-size: 14px;
+}
+/* END ABOUT */
+/* Start Postingan Kegiatan*/
+
+.post {
+    margin-top: -25px !important;
+}
+.post img{
+    object-fit: cover;
+    object-position: center;
+}
+.post-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.category-post li {
+    font-size: 13px;
+}
+.date-post {
+    font-size: 14px;
+}
+.content-post {
+    font-size: 16px !important;
+}
+/* End Postingan Kegiatan*/
+/* START FOOTER */
+.footer {
+    background-color: var(--blue);
+    color: #ffff;
+}
+.footer h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer .contact-me {
+    font-size: 14px;
+    font-weight: 400;
+}
+.info-footer {
+    margin-top: 50px !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+.link-footer {
+    font-size: 14px !important;
+    font-weight: 400;
+}
+.copyright-footer {
+    margin-top: 120px;
+    padding-bottom: 10px;
+}
+/* END FOOTER */
+.video-card
+{
+ clear: both; text-align: center;
+}
+.video-card-top {
+   border-radius: 10px;
+   /* border-top: 10px solid #185adb; */
+   box-shadow: 16px 13px 42px -17px rgba(0,0,0,0.69);
+   height: 250px;
+   width: 100%;
+}
+     /* NEw kegiatan in post */
+     .card-new-post h5{
+        font-size: 16px;
+    }
+.img-new-posts{
+    width: 100% !important;
+    height: 100% !important; 
+    object-fit: cover !important;
+    object-position: center !important;
+ }
+
+/* .card-new-post{
+    height: 184px !important;
+} */
+/* COntact US */
+.contact-us img{
+    background-size: cover;
+    width: 400px !important;
+    height: 396px !important ;
+}
+.card-contact-us{
+    border-radius: 50px !important;
+background: linear-gradient(145deg, #ffffff, #185ADB);
+box-shadow:  8px 8px 5px #9e9e9e,
+             -8px -8px 5px #ffffff;
+}
+/* Repository */
+.image-repository{
+    width: 150px;
+    height: 170px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 760px), (min-width: 760px) {
+
+.card-new-post{
+    height: 150px !important;
+}
+.img-new-posts{
+    width: 100% !important;
+    height: 150px !important; 
+    object-fit: cover !important;
+    object-position: center !important;
+ }
+}
+@media only screen and (max-width: 1200px) {
+    /* Text Judul */
+    .text-judul {
+        margin-top: 90px !important;
+        margin-bottom: 40px !important;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    /* Card Stick */
+    .card-stick-text {
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 65px;
+    }
+    .card-stick-text-repo {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    /* card kegiatan beranda */
+    .activity img {
+        background: linear-gradient(
+            0deg,
+            #0a1931 0%,
+            rgba(10, 25, 49, 0) 100%
+        ) !important;
+        max-width: 600px;
+    }
+    /* START CARD DEVISI */
+    .card-divisi-body {
+        background-color: #fff !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        height: 480px;
+    }
+
+    .wrapper {
+        max-height: 1200px;
+        box-shadow: 1px solid black;
+        display: flex;
+        overflow: auto;
+    }
+    .wrapper .item {
+        min-width: 450px;
+        height: 450px;
+        margin-right: -150px;
+        margin-left: -60px;
+        margin-bottom: 5px;
+    }
+    .card-divisi-body {
+        background-color: #fff !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        width: 300px;
+        height: 400px;
+        position: relative;
+    }
+    .card-divisi-body:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+    }
+    .card-divisi-body p {
+        font-size: 14px;
+    }
+    .image-divisi:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+    .card-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .card-link {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 20px;
+        color: var(--blue) !important;
+    }
+    /* Card Struktur */
+    .card-struktur {
+        position: relative;
+    }
+    .person-info {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .person-info h5 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .person-info p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+ 
+    /* .card-new-post{
+    height: 184px !important;
+} */
+}
+
+@media only screen and (max-width: 992px) {
+    /* Start Card Stick  */
+    .card-stick-info img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .card-stick-text {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+        margin-left: 80px;
+    }
+    .card-stick-text-repo {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+        margin-left: 65px;
+    }
+
+    /* END Card Stick */
+
+    /* Start Hero */
+    .hero-font {
+        font-size: 24px !important;
+        font-weight: 700 !important;
+    }
+    .hero-logo {
+        width: 100px;
+        height: 100px;
+    }
+    /* End Hero */
+    /* START KEGIATAN BERANDA */
+    .activity {
+        margin-top: 150px;
+    }
+    .card-beranda-big .card-img {
+        height: 375px;
+    }
+
+    .card-beranda-big h5 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .card-beranda-big p {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: -3px;
+    }
+    .calendar {
+        height: 15px;
+        margin-top: -3px;
+    }
+    .card-beranda-big small {
+        font-size: 11px;
+        font-weight: 400;
+        color: #b3b3b3;
+    }
+    .card-beranda .card-img {
+        object-fit: cover;
+        object-position: center;
+        height: 180px;
+    }
+    .card-beranda h5 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .card-beranda p {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .card-beranda:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+    }
+    .card-beranda-big:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+    }
+    .activity img {
+        background: linear-gradient(
+            0deg,
+            #0a1931 0%,
+            rgba(10, 25, 49, 0) 100%
+        ) !important;
+        max-width: 800px;
+    }
+    /* End KEGIATAN BERANDA */
+    /* Start body struktur  */
+
+    .card-struktur {
+        position: relative;
+    }
+    .person-info {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .person-info h5 {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .person-info p {
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    /* Footer */
+    .info-footer {
+        margin-top: 30px !important;
+    }
+    /* END body struktur */
+    /* Start About Divisi */
+    .img-divisi {
+        object-fit: cover !important;
+        object-position: center !important;
+        width: 1100px;
+        height: 280px;
+    }
+    /* End About Divisi */
+    /* START CARD DEVISI */
+    .card-divisi-body {
+        background-color: #fff !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        height: 480px;
+    }
+
+    .wrapper {
+        max-height: 1200px;
+        box-shadow: 1px solid black;
+        display: flex;
+        overflow: auto;
+    }
+    .wrapper .item {
+        min-width: 450px;
+        height: 450px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    .card-divisi-body {
+        background-color: #fff !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        width: 300px;
+        height: 400px;
+        position: relative;
+    }
+    .card-divisi-body:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+    }
+    .card-divisi-body p {
+        font-size: 14px;
+    }
+    .image-divisi:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+    .card-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .card-link {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 20px;
+        color: var(--blue) !important;
+    }
+    /* Start Visi Misi */
+    .misi {
+        margin-top: -5px !important;
+    }
+    /* End Visi Misi */
+    /* NEw kegiatan in post */
+    .card-new-post h5{
+        font-size: 14px;
+    }
+   
+}
+@media only screen and (max-width: 750px) {
+    .card-new-post{
+        height: 290px !important;
+    }  
+}
+@media only screen and (max-width: 550px) {
+    /* START NAVBAR */
+    .navbar-nav {
+        text-align: center;
+    }
+    .dropdown-menu {
+        text-align: center !important;
+    }
+    .navbar-logo {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .navbar-font {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+    /* END NAVBAR */
+    /* Text Judul */
+    .text-judul {
+        margin-top: 50px !important;
+        margin-bottom: 32px !important;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    /* Card Stick */
+    .stick {
+        margin-bottom: -80px;
+    }
+    .card-stick-info img {
+        height: 30px !important;
+        width: 30px !important;
+    }
+    .card-stick-text {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        margin-left: 60px;
+    }
+    .card-stick-text-repo {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    /* Hero */
+    .hero-font {
+        font-size: 24px !important;
+        font-weight: 700 !important;
+    }
+    .hero-logo {
+        width: 90px;
+        height: 90px;
+    }
+    /* START KEGIATAN BERANDA */
+
+    .card-activity {
+        position: absolute;
+        bottom: 0;
+    }
+    .card-activitys {
+        position: absolute;
+        bottom: 0;
+    }
+    .card-img-overlay {
+        background: linear-gradient(
+            0deg,
+            #0a1931 0%,
+            rgba(10, 25, 49, 0) 100%
+        ) !important;
+    }
+    .activity {
+        margin-top: 150px;
+    }
+    .card-beranda-big {
+        margin: auto;
+
+        height: 200px;
+    }
+    .card-beranda-big .card-img {
+        height: 200px;
+    }
+    .card-beranda-big h5 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .card-beranda-big p {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: -3px;
+    }
+    .calendar {
+        height: 10px;
+        margin-top: -3px;
+    }
+    .card-beranda-big small {
+        display: inline-block;
+        font-size: 8px;
+        font-weight: 400;
+        color: #b3b3b3;
+    }
+    .card-beranda h5 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .card-beranda p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .card-beranda:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+    }
+    .card-beranda-big:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+    }
+    .activity img {
+        background: linear-gradient(
+            0deg,
+            #0a1931 0%,
+            rgba(10, 25, 49, 0) 100%
+        ) !important;
+        max-width: 800px;
+    }
+    /* End KEGIATAN BERANDA */
+    /* Start About Divisi */
+    .img-divisi {
+        object-fit: cover !important;
+        object-position: center !important;
+        margin-top: 5px;
+        width: 100%;
+        height: 200px;
+    }
+    /* End About Divisi */
+    /* START CARD DEVISI */
+
+    .wrapper {
+        max-height: 1200px;
+        box-shadow: 1px solid black;
+        display: flex;
+        overflow: auto;
+    }
+    .wrapper .item {
+        min-width: 450px;
+        height: 340px;
+        margin-left: 20px;
+        margin-right: -220px;
+        margin-bottom: 5px;
+    }
+    .card-divisi-body {
+        background-color: #fff !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        width: 240px;
+        height: 320px;
+        position: relative;
+    }
+    .card-divisi-body:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+    }
+    .card-divisi-body h5 {
+        font-size: 14px;
+    }
+    .card-divisi-body p {
+        text-align: justify;
+        font-size: 12px;
+    }
+    .image-divisi:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+    .card-icon {
+        margin: auto;
+        height: 50px;
+        width: 50px;
+    }
+    .card-link {
+        position: absolute;
+        bottom: 0;
+        font-size: 12px;
+        padding-bottom: 20px;
+        color: var(--blue) !important;
+    }
+    /* START KEGIATAN */
+    .kegiatan img {
+        width: 250px;
+    }
+    .card-kegiatan{
+      
+        width: 350px;
+    }
+    .card-kegiatan .card-title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .card-kegiatan .card-body {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .card-kegiatan .card-category {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .time i {
+        color: var(--blue) !important;
+    }
+    .card-image-kegiatan {
+        position: relative;
+    }
+    .card-image-kegiatan img {
+        object-fit: cover !important;
+        object-position: center !important;
+        height: 130px;
+    }
+    .card-body hr {
+        display: none;
+    }
+    .content-post {
+        display: none;
+    }
+
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+
+    .card-footer-info {
+        position: relative;
+    }
+    .card-footer-info span {
+        font-size: 10px;
+        margin-top: -10px;
+        font-weight: 200;
+    }
+    .read-more {
+        position: absolute;
+        left: 0;
+        top: 0 !important;
+    }
+
+    .read-more-1 {
+        text-decoration: none;
+        position: relative;
+        color: var(--white);
+    }
+
+    .read-more-1::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--white);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 250ms ease-in;
+    }
+
+    .read-more-1:hover {
+        color: var(--white);
+    }
+
+    .read-more-1:hover::after {
+        transform: scaleX(1);
+        transform-origin: right;
+        color: var(--white);
+    }
+
+    .img-new-posts{
+        width: 100% !important;
+        height: 100% !important; 
+        object-fit: cover !important;
+        object-position: center !important;
+     }
+    /* End KEGIATAN TERBARU */
+    /* Start Visi Misi  */
+    .visimisi img {
+        width: 250px !important;
+    }
+    .visi {
+        font-size: 14px !important;
+    }
+    .misi {
+        font-size: 14px;
+        margin-top: -5px !important;
+    }
+    /* End Visi Misi */
+    /* Start body struktur  */
+
+    .struktur img {
+        width: 250px;
+    }
+    /* Sejarah HMTI */
+    .sejarah-hmti {
+        font-size: 8px;
+        margin-top: -20px !important;
+    }
+    /* Start About */
+    .about-divisi {
+        margin-bottom: -10px;
+        font-size: 22px !important;
+        font-weight: 600;
+    }
+    .about-divisi h1 {
+        font-size: 36px;
+        font-weight: 800;
+    }
+}
+@media only screen and (max-width: 350px) {
+    /* START NAVBAR */
+    .navbar-logo {
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .navbar-font {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+    }
+    /* END NAVBAR */
+    /* Start Card Stick */
+    .card-stick-info img {
+        height: 20px !important;
+        width: 20px !important;
+    }
+    .card-stick-text {
+        font-size: 10px;
+        font-weight: 500;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .card-stick-text-repo {
+        font-size: 10px;
+        font-weight: 500;
+        text-align: center;
+        margin-left: 0px;
+    }
+    /* Hero */
+    .hero-font {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+    }
+    /* START DEVISI */
+    .wrapper {
+        max-height: 500px;
+        box-shadow: 1px solid black;
+        display: flex;
+        overflow: auto;
+    }
+    .wrapper .item {
+        min-width: 100px;
+        height: 370px;
+        margin-right: -40px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    .card-divisi-body {
+        background-color: #fff !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        height: 320px;
+        width: 210px;
+    }
+    .card-divisi-body:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+    }
+    .card-divisi-body p {
+        font-size: 10px;
+    }
+    .card-divisi-body h5 {
+        font-size: 12px;
+    }
+    .card-divisi-body a {
+        font-size: 10px;
+    }
+    .image-divisi:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+    .card-icon {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+    .card-link {
+        color: var(--blue) !important;
+    }
+
+    /* END DEVISI */
+    /* Start Kegiatan */
+    .card-footer-info span {
+        font-size: 9px;
+        margin-top: -9px;
+        font-weight: 200;
+    }
+}

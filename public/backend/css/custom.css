@@ -1,0 +1,89 @@
+.dataTables_info{
+    margin-top: 25px;
+}
+
+.table-data{
+  width: 100% !important;
+ 
+}
+
+.dataTables_paginate{
+    margin-top: 25px;
+    color: black !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    border-radius: 50% !important;
+    color: #7f63f4 !important;
+    background: rgba(127, 99, 244, 0.1) !important;
+    border: 0 !important;
+ }
+ .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border-radius: 50% !important;
+    color: #7f63f4 !important;
+    background: rgba(127, 99, 244, 0.1) !important;
+    border: 0 !important;
+ }
+ .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: red !important;
+    border: 0 !important;
+ }
+ .dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+    color: black !important;
+ }
+ .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover {
+     background: transparent !important;
+     color: black !important;
+     background: rgba(127, 99, 244, 0.1) !important;
+    }
+.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+       color: black !important;
+}
+ .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
+    background: transparent !important;
+    color: black !important;
+    background: rgba(127, 99, 244, 0.1) !important;
+ }
+ .dataTables_wrapper .dataTables_paginate .paginate_button.previous.disabled
+ {
+    cursor: default !important;
+    color: 	#D3D3D3 !important;
+    border: 1px solid transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+ .dataTables_wrapper .dataTables_paginate .paginate_button.next.disabled
+ {
+    cursor: default !important;
+    color: 	#D3D3D3 !important;
+    border: 1px solid transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.img-preview{
+   border-radius: 30px 30px !important;
+   object-fit: cover !important;
+   object-position: center !important;
+   width: 500px !important;
+}
+
+.video-card
+{
+ clear: both; text-align: center;
+}
+.video-card-top {
+   border-radius: 10px;
+   border-top: 10px solid #185adb;
+   box-shadow: 16px 13px 42px -17px rgba(0,0,0,0.69);
+   height: 250px;
+   width: 360px;
+}
+
+hr
+{
+ border: 2px dashed #C0C0C0;
+}
+
+.ui-datepicker-calendar {
+   display: none;
+   }
